@@ -16,7 +16,7 @@ spaceKey.addEventListener("click", function () {
 let deleteKey = document.getElementById("delete");
 deleteKey.addEventListener("click", function () {
   let content = textContainer.innerText;
-  let newContent = content.pop(0, content, length - 1);
+  let newContent = content.slice(0, -1);
   textContainer.innerText = newContent;
 });
 let capsLock = document.getElementById("caps");
